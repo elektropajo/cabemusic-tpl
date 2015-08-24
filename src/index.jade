@@ -1,0 +1,14 @@
+extends _layouts/base
+
+include _modules/link/link
+
+block content
+  .container
+    section#content.portada
+      header#content-header
+        h2#content-header-title= site.data.index.pagename
+      nav#content-nav
+      article#content-article
+        h3#content-article-title Título artículo
+        p.
+          Example

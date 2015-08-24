@@ -1,0 +1,26 @@
+{
+  "pagename": "Música",
+  "albums": [
+    {
+      "caratula": "images/caratula.png",
+      "titulo": "Título",
+      "genero": "Género",
+      "autor": "Autor",
+      "link": "album",
+      "precio": "1€",
+      "new": "false",
+      "oferta": "true",
+      "valoracion": "4"
+    },{
+      "caratula": "images/caratula.png",
+      "titulo": "Título",
+      "genero": "Género",
+      "autor": "Autor",
+      "link": "album",
+      "precio": "1€",
+      "new": "false",
+      "oferta": "true",
+      "valoracion": "3"
+    }
+  ]
+}
