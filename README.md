@@ -1,12 +1,11 @@
-# Cabemusic.com readme
+# Cabemusic.com template
 
 Generated on 2015-08-24 using
 [generator-yeogurt@1.2.6](https://github.com/larsonjj/generator-yeogurt)
 
 ## Description
 
-This is an example readme file.
-Describe your site/app here.
+This is a HTML5, CSS3 and JS template for cabemusic.com.
 
 ## Technologies used
 

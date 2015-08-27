@@ -1,0 +1,6 @@
+mixin input(type, id, name, label, clase, ph, required, disabled, texto)    
+  .form-input-wrapper
+    label(for=id class="form-input-label form-input-label-"+type) #{label}
+    input(type=type, name=id, id=id, class="form-input form-input"+type, placeholder=ph, required=required, disabled=disabled)
+    p.form-input-explain #{texto}
+      

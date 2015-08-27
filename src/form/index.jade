@@ -1,0 +1,53 @@
+extends ../_layouts/base
+
+include ../_modules/input/input
+
+block content
+  .container
+      header#content-header
+        h2#content-header-title= site.data.form.pagename
+      nav#content-nav
+      form#content-form.content-form
+        h3#content-form-title Título de formulario
+        p.
+          Aquí se explica el formulario.
+        section.content-form-section
+          h4.content-form-section-title Título de la sección
+          fieldset.content-form-fieldset
+            legend.content-form-legend Leyenda
+            +input('radio', 'radio1', 'radio', 'Radio 1', 'horizontal')
+            +input('radio', 'radio2', 'radio', 'Radio 2', 'horizontal')
+            +input('radio', 'radio3', 'radio', 'Radio 3', 'horizontal')
+          fieldset.content-form-fieldset
+            legend.content-form-legend Leyenda
+            +input('checkbox', 'radio1', 'radio', 'Radio 1', 'horizontal')
+            +input('checkbox', 'radio2', 'radio', 'Radio 2', 'horizontal')
+            +input('checkbox', 'radio3', 'radio', 'Radio 3', 'horizontal')
+          +input('text', 'texto', 'texto', 'Texto', '', 'Placeholder...', true)
+          +input('email', 'email', 'texto', 'Email', '', 'Placeholder...')
+        section.content-form-section
+          h4.content-form-section-title Título de la sección
+          +input('password', 'texto', 'texto', 'Texto', '', 'Placeholder...', true, false, 'Texto explicativo del input.',)
+          +input('search')
+          +input('tel')
+          +input('url')
+          +input('checkbox')
+          +input('color')
+          +input('file')
+          +input('number')
+          input(type='range', min='0', max='10', step='1', list='datalist', value='5')
+          datalist(id='datalist')
+            option 1
+            option 2
+            option 3
+          +input('date')
+          +input('button')
+          +input('submit')
+          textarea
+          select
+            optgroup(label="Grupo")
+              option(value="1") Opción 1
+              option(value="2") Opción 2
+          meter
+          progress
+          button

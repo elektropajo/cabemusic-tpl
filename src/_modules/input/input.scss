@@ -1,0 +1,23 @@
+// input styles
+.form-input {
+  margin-top: 1.5em;
+}
+.form-input-label {
+  display: none;
+}
+.form-input-label-radio, .form-input-label-checkbox {
+  display: inline-block;
+}
+
+.form-input:required,
+.form-input:invalid {
+  border-color: red;
+}
+
+.form-input:disabled {
+  border-color: grey;
+}
+
+.form-input:valid {
+  border-color: green;
+}
