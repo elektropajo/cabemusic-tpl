@@ -2,8 +2,11 @@
 // - Base: se aplica en general, sin ninguna clase específica
 // - One-page: se aplica en la portada, con la clase en el body .one-page
 
+$nav-width: 20em;
+$page-top-height: 3.5em;
+
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #l-page-menus {
@@ -28,35 +31,41 @@ body {
 }
 
 .one-page {
-  #l-page-top-header {
-    background: red;
+  #l-page-top {
+    background: #222;
     overflow: hidden;
     width: 100%;
     float: left;
-    margin-left:0;
+    position: fixed;
+    height: $page-top-height;
+  }
+  #l-page-top-header {
+    background: #333;
+    overflow: hidden;
+    width: 100%;
+    float: left;
   }
   #l-page-nav {
-    background: grey;
+    background: #444;
     overflow: hidden;
-    width: 20em;
+    width: $nav-width;
     height: 100vh;
     float: left;
     position: fixed;
-    right:-20em;
+    right:-$nav-width;
   }
   #l-page-main {
-    background: blue;
+    background: #555;
     overflow-x: hidden;
     width: 100%;
     float: left;
-    margin-left:0;
+    margin-top: $page-top-height;
   }
   #l-page-footer {
-    background: grey;
+    background: #666;
     overflow: hidden;
     width: 100%;
     float: left;
-    margin-left:0;
   }
 }
 
@@ -67,18 +76,23 @@ body {
 
 // Medium devices (tablets, 48em and up)
 @media (min-width: 48em) {
-  #l-page-nav {
-    width: auto;
-    height: auto;
-    float: left;
-    position: static;
-    right: auto;
-  }
+
 }
 
 // Large devices (desktops, 62em and up)
 @media (min-width: 62em) {
-
+  .one-page {
+    #l-page-top-header {
+      width: auto;
+    }
+    #l-page-nav {
+      width: auto;
+      height: auto;
+      float: right;
+      position: static;
+      right: auto;
+    }
+  }
 }
 
 // Extra large devices (large desktops, 75em and up)

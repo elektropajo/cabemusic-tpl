@@ -1,4 +1,11 @@
 // toggle styles
-.toggle-nav {
+.toggle {
   float: right;
+  @media (min-width: 62em) {
+    // Extend Accesible-hide
+    display: none;
+  }
+}
+.toggle.toggle-nav-close {
+  float:left;
 }

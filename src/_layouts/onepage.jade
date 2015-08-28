@@ -1,4 +1,5 @@
 include ../_modules/link/link
+include ../_modules/brand/brand
 include ../_modules/toggle/toggle
 include ../_modules/header/header
 include ../_modules/nav/nav
@@ -20,17 +21,15 @@ body.one-page
   #l-page-top
     // Header: brand
     #l-page-top-header
-      header.brand
-        h1.brand-title
-          img.brand-title-logo
-          span.brand-title-name Cabemusic
+      //Brand
+      +brand()
       // Toggle
       +toggle({'icon': 'hamburguer', 'target': 'l-page-nav', 'title':'Desplegar menú'})
 
     // Navs
     #l-page-nav
       // Nav: not logged user nav
-      +toggle({'icon': 'close', 'target': 'l-page-nav', 'title':'Cerrar menú'})
+      +toggle({'icon': 'close', 'target': 'l-page-nav', 'title':'Cerrar menú', 'classes': 'toggle-nav-close'})
       nav.nav-user
         header.nav-user-title
           h2.accesible-hide Sesión
