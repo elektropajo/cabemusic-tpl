@@ -1,0 +1,29 @@
+.nav {
+  padding: 1.5em;
+}
+.nav-title {
+    @media (min-width: 62em) {
+      // Accesible-hide
+      display: none;
+    }
+}
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-menu-item {
+
+}
+.nav-menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  &:link,
+  &:visited {
+    color: $blanco;
+  }
+  &:hover,
+  &:active {
+    color: $azul;
+  }
+}

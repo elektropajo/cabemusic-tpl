@@ -28,21 +28,12 @@ body.one-page
 
     // Navs
     #l-page-nav
-      // Nav: not logged user nav
+      // Close nav button
       +toggle({'icon': 'close', 'target': 'l-page-nav', 'title':'Cerrar menú', 'classes': 'toggle-nav-close'})
-      nav.nav-user
-        header.nav-user-title
-          h2.accesible-hide Sesión
-        ul.nav-user-menu 
-          li: +link({"href": "login", "text": "Entra"})
-          li: +link({"href": "login", "text": "Regístrate"})
+      // Nav: Logged-out user
+      +nav(site.data.navs.user)
       // Nav: language nav
-      nav.nav-language
-        header.nav-languaje-title
-          h2.accesible-hide Idioma
-        ul.nav-language-menu
-          li: +link({"text": "English"})
-          li: +link({"text": "Français"})
+      +nav(site.data.navs.language)
   // Page main content
   main#l-page-main(role="main")
     block content

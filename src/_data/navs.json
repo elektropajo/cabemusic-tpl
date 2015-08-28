@@ -1,0 +1,56 @@
+{
+  "user": {
+    "menuName": "user",
+    "menuTitle": "Sesión",
+    "menuLinks":
+    [{
+      "url": "login",
+      "text": "Entra"
+    },{
+      "url": "register",
+      "text": "Regístrate"
+    }]
+  },
+  "language": {
+    "menuName": "language",
+    "menuTitle": "Idioma",
+    "menuLinks":
+    [{
+      "url": "",
+      "text": "English"
+    },{
+      "url": "",
+      "text": "Français"
+    }]
+  },
+  "main": {
+    "menuName": "main",
+    "menuTitle": "Menú",
+    "menuLinks":
+    [{
+      "url": "musica",
+      "text": "Música"
+    },{
+      "url": "artistas",
+      "text": "Artistas"
+    },{
+      "url": "colaboradores",
+      "text": "Colaboradores"
+    }]
+  },
+  "example": {
+    "menuName": "example",
+    "menuTitle": "Menú de ejemplo",
+    "menuLinks":
+    [{
+      "url": "musica",
+      "text": "Música"
+    },{
+      "url": "artistas",
+      "text": "Artistas"
+    },{
+      "url": "colaboradores",
+      "text": "Colaboradores"
+    }]
+  }
+}

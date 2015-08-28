@@ -3,6 +3,8 @@
 // Normalize Styles
 @import '../../node_modules/normalize.css/normalize';
 
+// Import theme
+@import '_theme';
 // Import layout
 @import '_layout';
 // Import modules
@@ -13,8 +15,6 @@
 @import '../_modules/input/input';
 // Import states
 @import '_states';
-// Import theme
-@import '_theme';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -28,4 +28,5 @@
 
 html {
   font-size: 16px;
+  color: $blanco;
 }

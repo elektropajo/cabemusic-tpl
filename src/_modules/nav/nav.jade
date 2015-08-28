@@ -1,7 +1,8 @@
-mixin nav(id, title, data)      
-  nav(id=id)
-    h2(id= id + "-title")= title
-    ul(id= id + "-menu")
-    each elem in data
-      li
-        a(href=elem.link) #{elem.name}
+mixin nav(nav)
+  nav(class='nav nav-'+nav.menuName)
+    header(class='nav-title nav-'+nav.menuName+'-title')
+      h2 #{nav.menuTitle}
+    ul(class='nav-menu nav-'+nav.menuName+'-menu')
+      each link in nav.menuLinks
+        li(class='nav-menu-item nav-'+nav.menuName+'-menu-item')
+          a(class='nav-menu-link nav-'+nav.menuName+'-menu-link', href=link.url) #{link.text}
