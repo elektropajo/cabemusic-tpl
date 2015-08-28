@@ -1,12 +1,26 @@
-extend ./base
+include ../_modules/link/link
+include ../_modules/header/header
+include ../_modules/nav/nav
+include ../_modules/footer/footer
 
-// Add extra stylesheets
-block append stylesheets
-
-block content
-  //- Provides layout level markup
-  .layout-wrapper.base
-    block base
-
-// Add extra scripts
-block append scripts
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+  title Cabemusic
+  meta(name='description', content= site.data.global.description)
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  block stylesheets
+    link(rel='stylesheet', href= config.baseUrl + 'styles/main.css')
+  block scripts
+    script(src= config.baseUrl + 'scripts/main.js')
+body
+  // Page menus
+  #l-page-menus
+  // Page filters
+  #l-page-filters
+  // Page main content
+  main#l-page-main(role="main")
+    block content
+  // Page footer
+  +footer('l-page-footer', 'Pie de página')

@@ -1,3 +1,5 @@
+
+@import '_mixins';
 // Normalize Styles
 @import '../../node_modules/normalize.css/normalize';
 
@@ -5,6 +7,7 @@
 @import '_layout';
 // Import modules
 @import '../_modules/link/link';
+@import '../_modules/toggle/toggle';
 @import '../_modules/nav/nav';
 @import '../_modules/input/input';
 // Import states
@@ -20,4 +23,8 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
 }

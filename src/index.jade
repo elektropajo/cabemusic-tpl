@@ -3,12 +3,24 @@ extends _layouts/onepage
 include _modules/link/link
 
 block content
-  .container
-    section#content.portada
-      header#content-header
-        h2#content-header-title= site.data.index.pagename
-      nav#content-nav
-      article#content-article
-        h3#content-article-title Título artículo
-        p.
-          Example
+  section.portada
+    header.page-screen
+      h2.accesible-hide Portada
+      p.description Un lugar para tu música
+      nav.nav-main
+        h3.accesible-hide
+        ul.nav-main-menu
+          li: +link({"href": "descarga", "text": "Descarga"})
+          li: +link({"href": "descarga", "text": "Escucha"})
+          li: +link({"href": "descarga", "text": "Vende"})
+      +link({"href": "descarga", "text": "Down"})
+    article.page-screen.page-screen-left
+      h3 Un lugar para tu música
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus diam quis magna euismod, et luctus libero blandit. Maecenas quis nunc justo. Cras posuere massa at justo feugiat aliquam. Vivamus tincidunt volutpat mauris, sed ullamcorper massa interdum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis dolor vulputate, tristique ante nec, aliquam enim. Sed convallis ex vitae ligula commodo, sed iaculis quam posuere. Sed iaculis, leo ornare blandit ultrices, lacus ex iaculis enim, sed blandit odio lacus interdum eros. Etiam consectetur quam quis lectus rutrum vehicula. Mauris in mattis ante. Quisque et dapibus purus. Proin eget dui eget felis ultricies vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vehicula nisi eget ipsum tincidunt tempus.
+      +link({"href": "descarga", "text": "Ver artistas"})
+      img(src="")
+    article.page-screen.page-screen-right
+      h3 Un lugar para tu música
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus diam quis magna euismod, et luctus libero blandit. Maecenas quis nunc justo. Cras posuere massa at justo feugiat aliquam. Vivamus tincidunt volutpat mauris, sed ullamcorper massa interdum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis dolor vulputate, tristique ante nec, aliquam enim. Sed convallis ex vitae ligula commodo, sed iaculis quam posuere. Sed iaculis, leo ornare blandit ultrices, lacus ex iaculis enim, sed blandit odio lacus interdum eros. Etiam consectetur quam quis lectus rutrum vehicula. Mauris in mattis ante. Quisque et dapibus purus. Proin eget dui eget felis ultricies vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec vehicula nisi eget ipsum tincidunt tempus.
+      +link({"href": "descarga", "text": "Ver artistas"})
+      img(src="")

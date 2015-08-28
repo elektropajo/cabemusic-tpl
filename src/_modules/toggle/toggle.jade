@@ -1,0 +1,19 @@
+mixin toggle(config)
+  - var _config = config || {}
+  - var _id = config.id || ''
+  - var _classes = config.classes || ''
+  - var _icon = config.icon || ''
+  - var _text = config.text || ''
+  - var _target = config.target || ''
+  - var _title = config.title || ''
+    
+  button(
+    id=_id,
+    class='toggle '+_classes,
+    data-target=_target,
+    title=_title
+  )
+    span(
+      class='icon-'+_icon
+    )
+  

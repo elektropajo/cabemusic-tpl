@@ -1,4 +1,5 @@
 include ../_modules/link/link
+include ../_modules/toggle/toggle
 include ../_modules/header/header
 include ../_modules/nav/nav
 include ../_modules/footer/footer
@@ -14,8 +15,37 @@ head
     link(rel='stylesheet', href= config.baseUrl + 'styles/main.css')
   block scripts
     script(src= config.baseUrl + 'scripts/main.js')
-body
-  +header('page-header', site.data.global.sitename)
-  +nav('main-navigation', 'Navegación', site.data.nav)
-  block content
-  +footer('page-footer', 'Pie de página')
+body.one-page
+  // Page top
+  #l-page-top
+    // Header: brand
+    #l-page-top-header
+      header.brand
+        h1.brand-title
+          img.brand-title-logo
+          span.brand-title-name Cabemusic
+      // Toggle
+      +toggle({'icon': 'hamburguer', 'target': 'l-page-nav', 'title':'Desplegar menú'})
+
+    // Navs
+    #l-page-nav
+      // Nav: not logged user nav
+      +toggle({'icon': 'close', 'target': 'l-page-nav', 'title':'Cerrar menú'})
+      nav.nav-user
+        header.nav-user-title
+          h2.accesible-hide Sesión
+        ul.nav-user-menu 
+          li: +link({"href": "login", "text": "Entra"})
+          li: +link({"href": "login", "text": "Regístrate"})
+      // Nav: language nav
+      nav.nav-language
+        header.nav-languaje-title
+          h2.accesible-hide Idioma
+        ul.nav-language-menu
+          li: +link({"text": "English"})
+          li: +link({"text": "Français"})
+  // Page main content
+  main#l-page-main(role="main")
+    block content
+  // Page footer
+  +footer('l-page-footer', 'Pie de página')

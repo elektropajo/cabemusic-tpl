@@ -1,0 +1,87 @@
+// Disponemos de dos layouts diferentes:
+// - Base: se aplica en general, sin ninguna clase específica
+// - One-page: se aplica en la portada, con la clase en el body .one-page
+
+body {
+  overflow: hidden;
+}
+
+#l-page-menus {
+  background: red;
+  overflow: hidden;
+  width: 20vw;
+}
+#l-page-filters {
+  background: blue;
+  overflow: hidden;
+  width: 80vw;
+}
+#l-page-main {
+  background: grey;
+  overflow: hidden;
+  width: 80vw;
+}
+#l-page-footer {
+  background: green;
+  overflow: hidden;
+  width: 80vw;
+}
+
+.one-page {
+  #l-page-top-header {
+    background: red;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    margin-left:0;
+  }
+  #l-page-nav {
+    background: grey;
+    overflow: hidden;
+    width: 20em;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    right:-20em;
+  }
+  #l-page-main {
+    background: blue;
+    overflow-x: hidden;
+    width: 100%;
+    float: left;
+    margin-left:0;
+  }
+  #l-page-footer {
+    background: grey;
+    overflow: hidden;
+    width: 100%;
+    float: left;
+    margin-left:0;
+  }
+}
+
+// Small devices (landscape phones, 34em and up)
+@media (min-width: 34em) {
+
+}
+
+// Medium devices (tablets, 48em and up)
+@media (min-width: 48em) {
+  #l-page-nav {
+    width: auto;
+    height: auto;
+    float: left;
+    position: static;
+    right: auto;
+  }
+}
+
+// Large devices (desktops, 62em and up)
+@media (min-width: 62em) {
+
+}
+
+// Extra large devices (large desktops, 75em and up)
+@media (min-width: 75em) {
+
+}
