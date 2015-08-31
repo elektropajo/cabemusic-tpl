@@ -9,10 +9,10 @@ mixin toggle(config)
     
   button(
     id=_id,
-    class='toggle '+_classes,
+    class='toggle toggle-'+_classes,
     data-target=_target,
     title=_title
-  )
+  )= _text
     span(
       class='icon-'+_icon
     )

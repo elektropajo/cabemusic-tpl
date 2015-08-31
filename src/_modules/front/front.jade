@@ -1,0 +1,15 @@
+mixin front(pages)
+  each page in pages
+    article.page-screen(class='page-screen-'+page.class)
+      .container
+        h3.page-screen-title #{page.title}
+        p.page-screen-text #{page.text}
+        case page.class
+          when "list"
+            section.page-screen-list-list
+            each artist in page.artists
+              article.page-screen-list-item
+                h4.accesible-hide artist.title
+          default
+            +link({'classes':'page-screen-link', 'href': page.link.url, 'text': page.link.text})
+            img.page-screen-img(src=page.img)

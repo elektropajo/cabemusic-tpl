@@ -1,9 +1,15 @@
-.is-l-page-nav-open {
-  #l-page-nav {
-    right:0;
+.is-l-page-nav-left-open {
+  #l-page-nav-left {
+    left: 0;
+  }
+}
+.is-l-page-nav-right-open {
+  #l-page-nav-right {
+    right: 0;
   }
 }
 
-#l-page-nav {
+#l-page-nav-left,
+#l-page-nav-right {
   transition: all .2s ease-in;
 }

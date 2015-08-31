@@ -5,10 +5,12 @@
     "menuLinks":
     [{
       "url": "login",
-      "text": "Entra"
+      "text": "Entrar",
+      "type": "button"
     },{
       "url": "register",
-      "text": "Regístrate"
+      "text": "Registrarse",
+      "type": "button"
     }]
   },
   "language": {

@@ -1,8 +1,14 @@
-$azul: #6dc1db;
-$rojo: #f04444;
-$amarillo: #d5d25d;
-$gris: #2e2e2e;
-$blanco: #fff;
+$azul: #6dbbd7;
+$rojo: #ef4343;
+$amar: #eee959;
+$gris: #282828;
+$blan: #ffffff;
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic);
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;

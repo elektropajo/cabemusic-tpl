@@ -1,3 +1,65 @@
 {
-  "pagename": "Portada"
+  "header": {
+    "brand": "Un lugar para tu música",
+    "links": [
+      {
+        "icon": "",
+        "url": "",
+        "text": "Decarga"
+      },{
+        "icon": "",
+        "url": "",
+        "text": "Escucha"
+      },{
+        "icon": "",
+        "url": "",
+        "text": "Vende"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "class": "left",
+      "title": "Un lugar para tu música",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus diam quis magna euismod, et luctus libero blandit. Maecenas quis nunc justo. Cras posuere massa at justo feugiat aliquam. Vivamus tincidunt volutpat mauris, sed ullamcorper massa interdum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis dolor vulputate, tristique ante nec, aliquam enim.",
+      "link": {
+        "url": "artistas",
+        "text": "Ver artistas"
+      },
+      "img": "cinta.jpg"
+    },{
+      "class": "right",
+      "title": "¿Cómo funciona Cabemusic?",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus diam quis magna euismod, et luctus libero blandit. Maecenas quis nunc justo. Cras posuere massa at justo feugiat aliquam. Vivamus tincidunt volutpat mauris, sed ullamcorper massa interdum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis dolor vulputate, tristique ante nec, aliquam enim.",
+      "link": {
+        "url": "artistas",
+        "text": "Ver artistas"
+      },
+      "img": "cinta.jpg"
+    },{
+      "class": "list",
+      "title": "Cabers",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus diam quis magna euismod, et luctus libero blandit. Maecenas quis nunc justo. Cras posuere massa at justo feugiat aliquam. Vivamus tincidunt volutpat mauris, sed ullamcorper massa interdum venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed quis dolor vulputate, tristique ante nec, aliquam enim.",
+      "artists": [
+        {
+          "img": "img.jpg",
+          "url": "artista",
+          "title": "Artista"
+        },{
+          "img": "img.jpg",
+          "url": "artista",
+          "title": "Artista"
+        },{
+          "img": "img.jpg",
+          "url": "artista",
+          "title": "Artista"
+        },{
+          "img": "img.jpg",
+          "url": "artista",
+          "title": "Artista"
+        }
+      ],
+      "img": "cinta.jpg"
+    }
+  ]
 }

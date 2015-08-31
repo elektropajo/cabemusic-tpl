@@ -9,6 +9,7 @@ import Header from '../_modules/header/header';
 import Brand from '../_modules/brand/brand';
 import Toggle from '../_modules/toggle/toggle';
 import Nav from '../_modules/nav/nav';
+import Front from '../_modules/front/front';
 import Footer from '../_modules/footer/footer';
 
 $(() => {

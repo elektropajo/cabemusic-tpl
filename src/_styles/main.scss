@@ -13,6 +13,7 @@
 @import '../_modules/toggle/toggle';
 @import '../_modules/nav/nav';
 @import '../_modules/input/input';
+@import '../_modules/front/front';
 // Import states
 @import '_states';
 
@@ -28,5 +29,5 @@
 
 html {
   font-size: 16px;
-  color: $blanco;
+  color: $blan;
 }

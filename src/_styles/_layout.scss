@@ -1,72 +1,56 @@
-// Disponemos de dos layouts diferentes:
-// - Base: se aplica en general, sin ninguna clase específica
-// - One-page: se aplica en la portada, con la clase en el body .one-page
+%layout-box {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+}
 
 $nav-width: 20em;
-$page-top-height: 3.5em;
+$page-top-height: 6em;
 
 body {
   overflow-x: hidden;
 }
 
-#l-page-menus {
-  background: red;
-  overflow: hidden;
-  width: 20vw;
+#l-page-top {
+  @extend %layout-box;
+  background: transparent;
+  position: fixed;
+  height: $page-top-height;
 }
-#l-page-filters {
-  background: blue;
-  overflow: hidden;
-  width: 80vw;
+#l-page-top-header {
+  @extend %layout-box;
+}
+#l-page-nav-left {
+  @extend %layout-box;
+  background: $gris;
+  width: $nav-width;
+  height: 100vh;
+  position: fixed;
+  left:-$nav-width;
+  padding: 1em;
+}
+#l-page-nav-right {
+  @extend %layout-box;
+  background: $gris;
+  width: $nav-width;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right:-$nav-width;
 }
 #l-page-main {
-  background: grey;
-  overflow: hidden;
-  width: 80vw;
+  @extend %layout-box;
+  position: static;
+  background: #555;
+  overflow-x: hidden;
+  margin-top: $page-top-height;
 }
 #l-page-footer {
-  background: green;
-  overflow: hidden;
-  width: 80vw;
-}
-
-.one-page {
-  #l-page-top {
-    background: #222;
-    overflow: hidden;
-    width: 100%;
-    float: left;
-    position: fixed;
-    height: $page-top-height;
-  }
-  #l-page-top-header {
-    background: #333;
-    overflow: hidden;
-    width: 100%;
-    float: left;
-  }
-  #l-page-nav {
-    background: $gris;
-    overflow: hidden;
-    width: $nav-width;
-    height: 100vh;
-    float: left;
-    position: fixed;
-    right:-$nav-width;
-  }
-  #l-page-main {
-    background: #555;
-    overflow-x: hidden;
-    width: 100%;
-    float: left;
-    margin-top: $page-top-height;
-  }
-  #l-page-footer {
-    background: #666;
-    overflow: hidden;
-    width: 100%;
-    float: left;
-  }
+  @extend %layout-box;
+  background: #666;
+  overflow-x: hidden;
+  position: static;
 }
 
 // Small devices (landscape phones, 34em and up)
@@ -81,21 +65,64 @@ body {
 
 // Large devices (desktops, 62em and up)
 @media (min-width: 62em) {
+  #l-page-top-header {
+    width: auto;
+  }
+  #l-page-nav-left {
+    width: 30%;
+    height: 100vh;
+    left: 0;
+  }
+  #l-page-nav-right {
+    width: auto;
+    height: auto;
+    float: right;
+    position: static;
+    right: auto;
+  }
+  #l-page-top,
+  #l-page-main,
+  #l-page-footer {
+    width: 70%;
+    margin-left: 30%;
+  }
   .one-page {
-    #l-page-top-header {
-      width: auto;
-    }
-    #l-page-nav {
+    #l-page-nav-left {
       width: auto;
       height: auto;
       float: right;
       position: static;
-      right: auto;
+      left: auto;
+    }
+    #l-page-top,
+    #l-page-main,
+    #l-page-footer {
+      width: 100%;
+      margin-left: 0;
     }
   }
 }
 
 // Extra large devices (large desktops, 75em and up)
 @media (min-width: 75em) {
-
+  #l-page-nav-left {
+    width: 15%;
+  }
+  #l-page-top,
+  #l-page-main,
+  #l-page-footer {
+    width: 85%;
+    margin-left: 15%;
+  }
+  .one-page {
+    #l-page-nav-left {
+      width: auto;
+    }
+    #l-page-top,
+    #l-page-main,
+    #l-page-footer {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
 }

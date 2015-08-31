@@ -5,4 +5,4 @@ mixin nav(nav)
     ul(class='nav-menu nav-'+nav.menuName+'-menu')
       each link in nav.menuLinks
         li(class='nav-menu-item nav-'+nav.menuName+'-menu-item')
-          a(class='nav-menu-link nav-'+nav.menuName+'-menu-link', href=link.url) #{link.text}
+          a(class='nav-menu-link nav-'+nav.menuName+'-menu-link '+link.type, href=link.url) #{link.text}

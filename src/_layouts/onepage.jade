@@ -21,15 +21,22 @@ body.one-page
   #l-page-top
     // Header: brand
     #l-page-top-header
+      // Toggle
+      +toggle({'icon': 'hamburguer', 'target': 'l-page-nav-left', 'title':'Desplegar menú'})
       //Brand
       +brand()
-      // Toggle
-      +toggle({'icon': 'hamburguer', 'target': 'l-page-nav', 'title':'Desplegar menú'})
-
     // Navs
-    #l-page-nav
+    #l-page-nav-left
       // Close nav button
-      +toggle({'icon': 'close', 'target': 'l-page-nav', 'title':'Cerrar menú', 'classes': 'toggle-nav-close'})
+      +toggle({'icon': 'close', 'target': 'l-page-nav-left', 'title':'Cerrar menú', 'classes': 'nav-close-left', 'text': 'Menú'})
+      // Search
+      form.form
+        label(for="search", class="accesible-hide")
+          | Buscar
+        input#search(
+          type='search',
+          placeholder="Buscar..."
+        )
       // Nav: Logged-out user
       +nav(site.data.navs.user)
       // Nav: language nav

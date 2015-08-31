@@ -10,6 +10,7 @@ export default class Toggle {
     for (let i=0; i < buttons.length; i++) {
       buttons[i].addEventListener('click', event => {
         let target = event.target.attributes['data-target'].value;
+        // TODO: Eliminar todas las clases y añadir la pertinente
         body.classList.toggle('is-'+target+'-open', !body.classList.contains('is-'+target+'-open'));
       });
     }

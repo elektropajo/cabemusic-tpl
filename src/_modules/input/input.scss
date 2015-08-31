@@ -1,4 +1,8 @@
 // input styles
+.form {
+  float: left;
+  width: 100%;
+}
 .form-input {
   margin-top: 1.5em;
 }
@@ -20,4 +24,18 @@
 
 .form-input:valid {
   border-color: green;
+}
+
+input {
+  color: $gris;
+  border-radius: 0.3em;
+  padding: 0.3em 1em;
+  outline: none;
+}
+input[type="search"] {
+  box-sizing: border-box;
+  border-radius: 50vh;
+  border-style: none;
+  float: left;
+  width: 100%;
 }
