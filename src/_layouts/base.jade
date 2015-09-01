@@ -31,6 +31,15 @@ body
     #l-page-nav-left
       // Close nav button
       +toggle({'icon': 'close', 'target': 'l-page-nav-left', 'title':'Cerrar menú', 'classes': 'nav-close-left'})
+      form.form
+        label(for="search", class="accesible-hide")
+          | Buscar
+        input#search(
+          type='search',
+          placeholder="Buscar..."
+        )
+      // Nav: Main nav
+      +nav(site.data.navs.main)
       // Nav: Logged-out user
       +nav(site.data.navs.user)
       // Nav: language nav

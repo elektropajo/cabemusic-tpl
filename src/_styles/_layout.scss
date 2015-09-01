@@ -29,6 +29,9 @@ body {
   position: fixed;
   left:-$nav-width;
   padding: 1em;
+  .form {
+    margin-bottom: 1.5em;
+  }
 }
 #l-page-nav-right {
   @extend %layout-box;
@@ -38,13 +41,13 @@ body {
   position: fixed;
   top: 0;
   right:-$nav-width;
+  padding: 1em;
 }
 #l-page-main {
   @extend %layout-box;
   position: static;
   background: #555;
   overflow-x: hidden;
-  margin-top: $page-top-height;
 }
 #l-page-footer {
   @extend %layout-box;
@@ -72,6 +75,7 @@ body {
     width: 30%;
     height: 100vh;
     left: 0;
+    overflow-y: auto;
   }
   #l-page-nav-right {
     width: auto;
@@ -80,7 +84,11 @@ body {
     position: static;
     right: auto;
   }
-  #l-page-top,
+  #l-page-top {
+    width: 70%;
+    margin-left: 30%;
+    background: transparent;
+  }
   #l-page-main,
   #l-page-footer {
     width: 70%;
@@ -88,11 +96,20 @@ body {
   }
   .one-page {
     #l-page-nav-left {
-      width: auto;
-      height: auto;
+      width: 70%;
+      height: $page-top-height;
       float: right;
       position: static;
       left: auto;
+      text-align: right;
+      background: transparent;
+      .form {
+        // Accesible hide
+        display: none;
+      }
+    }
+    #l-page-top-header {
+      width: 30%;
     }
     #l-page-top,
     #l-page-main,
@@ -116,7 +133,10 @@ body {
   }
   .one-page {
     #l-page-nav-left {
-      width: auto;
+      width: 85%;
+    }
+    #l-page-top-header {
+      width: 15%;
     }
     #l-page-top,
     #l-page-main,

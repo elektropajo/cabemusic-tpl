@@ -2,6 +2,9 @@
 .form {
   float: left;
   width: 100%;
+  @media (min-width: 62em) {
+    width: 15em;
+  }
 }
 .form-input {
   margin-top: 1.5em;
@@ -38,4 +41,22 @@ input[type="search"] {
   border-style: none;
   float: left;
   width: 100%;
+}
+.button {
+  color: $blan;
+  padding: 0.3em 1.5em;
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin-top: 1em;
+  border-radius: 5px;
+  border-color: $blan;
+  border-width: 2px;
+  border-style:solid;
+
+  &:hover {
+    background: $azul;
+    border-color: $azul;
+    color: $blan;
+  }
 }

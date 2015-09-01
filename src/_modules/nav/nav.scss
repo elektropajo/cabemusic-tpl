@@ -1,14 +1,7 @@
-.nav {
-  display: block;
-  @media (min-width: 62em) {
-    display: inline-block;
-  }
-}
 .nav-title {
   @extend %accesible-hide;
 }
 .nav-menu {
-  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -18,31 +11,13 @@
     display: inline;
   }
 }
-.nav-user {
-  position: absolute;
-  bottom: 5em;
-  left: 0;
-  padding: 0 1.5em;
-  width: 100%;
-}
-.nav-language {
-  position: absolute;
-  bottom: 1.5em;
-  left: 0;
-  width: 100%;
-  .nav-menu {
-    width: 100%;
-  }
-  .nav-menu-item {
-    float: left;
-    width: 50%;
-    text-align: center;
-  }
-}
 .nav-menu-link {
   text-decoration: none;
   text-transform: uppercase;
   transition: all .2s ease-in;
+  margin-top: 1.5em;
+  float:left;
+  width: 100%;
   &:link,
   &:visited {
     color: $blan;
@@ -52,22 +27,40 @@
     color: $azul;
   }
 }
+// Main
+.nav-main-menu-link {
+  margin-top: 0;
+}
 
-.button {
-  color: $blan;
-  padding: 0.3em 1.5em;
-  text-align: center;
-  float: left;
-  width: 100%;
-  margin-top: 1em;
-  border-radius: 5px;
-  border-color: $blan;
-  border-width: 2px;
-  border-style:solid;
-
-  &:hover {
-    background: $azul;
-    border-color: $azul;
-    color: $blan;
+// Usuario
+.one-page .nav-user {
+  @media (min-width: 62em) {
+    width: 25em;
+    float: right;
   }
+}
+.one-page .nav-user-menu-item {
+  @media (min-width: 62em) {
+    display: inline-block;
+    width: 11em;
+    float: left;
+    margin-right: 1.5em;
+  }
+}
+// Idioma
+.one-page .nav-language {
+  @media (min-width: 62em) {
+    width: 10em;
+    position: static;
+    float: right;
+    margin-right: 1em;
+  }
+}
+.nav-language-menu-item {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.nav-language-menu-link {
+  padding: 0.3em auto;
 }
