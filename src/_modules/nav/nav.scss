@@ -64,3 +64,41 @@
 .nav-language-menu-link {
   padding: 0.3em auto;
 }
+
+// Submenús
+.submenu {
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  padding: 0 1em;
+  height: 100vh;
+  background: $gris;
+  transition: left .2s ease-in;
+}
+.submenu-title {
+  color: $azul;
+  margin-top: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: left;
+  width: 100%;
+}
+.submenu-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.submenu-link {
+  color: $azul;
+  margin-top: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: left;
+  width: 100%;
+  cursor: pointer!important;
+}
+// States
+.is-submenu-open {
+  left: 0;
+}

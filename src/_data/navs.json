@@ -40,19 +40,73 @@
       "text": "Colaboradores"
     }]
   },
-  "example": {
-    "menuName": "example",
-    "menuTitle": "Menú de ejemplo",
+  "filter": {
+    "menuName": "filter",
+    "menuTitle": "Filtro de música",
     "menuLinks":
     [{
-      "url": "musica",
-      "text": "Música"
+      "url": "",
+      "text": "Lo último"
     },{
-      "url": "artistas",
-      "text": "Artistas"
+      "url": "",
+      "text": "Lo más vendido"
     },{
-      "url": "colaboradores",
-      "text": "Colaboradores"
+      "url": "",
+      "text": "Lo más valorado"
+    },{
+      "url": "",
+      "text": "Géneros",
+      "menuLinks":
+      [{
+        "url": "genero1",
+        "text": "Género 1"
+      },{
+        "url": "genero2",
+        "text": "Género 2",
+        "menuLinks":
+        [{
+          "url": "genero1",
+          "text": "Género 1"
+        },{
+          "url": "genero2",
+          "text": "Género 2",
+          "menuLinks":
+          [{
+            "url": "genero1",
+            "text": "Género 1"
+          },{
+            "url": "genero2",
+            "text": "Género 2"
+          },{
+            "url": "genero3",
+            "text": "Género 3"
+          },{
+            "url": "genero4",
+            "text": "Género 4"
+          },{
+            "url": "genero5",
+            "text": "Género 5"
+          }]
+        },{
+          "url": "genero3",
+          "text": "Género 3"
+        },{
+          "url": "genero4",
+          "text": "Género 4"
+        },{
+          "url": "genero5",
+          "text": "Género 5"
+        }]
+      },{
+        "url": "genero3",
+        "text": "Género 3"
+      },{
+        "url": "genero4",
+        "text": "Género 4"
+      },{
+        "url": "genero5",
+        "text": "Género 5"
+      }]
     }]
   }
 }

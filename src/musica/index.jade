@@ -8,10 +8,8 @@ block content
       #l-page-nav-right
         // Close nav button
         +toggle({'icon': 'close', 'target': 'l-page-nav-right', 'title':'Cerrar filtros', 'classes': 'toggle-nav-close-right'})
-        // Nav: Logged-out user
-        +nav(site.data.navs.user)
-        // Nav: language nav
-        +nav(site.data.navs.language)
+        // Nav: Filter
+        +nav(site.data.navs.filter)        
     each album in site.data.musica.albums
       article#content.content-music-list-album
         img.content-music-list-album-caratula(src=album.caratula, width="200px")

@@ -1,6 +1,6 @@
 %layout-box {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   float: left;
   width: 100%;
 }
@@ -78,11 +78,12 @@ body {
     overflow-y: auto;
   }
   #l-page-nav-right {
-    width: auto;
-    height: auto;
+    width: 70%;
+    height: 6em;
     float: right;
-    position: static;
-    right: auto;
+    position: fixed;
+    right: 0;
+    background: transparent;
   }
   #l-page-top {
     width: 70%;
