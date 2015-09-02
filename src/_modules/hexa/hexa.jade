@@ -1,3 +1,20 @@
-mixin hexa()
-  div.hexa
-    p This is an example paragraph for the hexa module
+mixin hexa(opt)
+  - var type = opt.type || ""
+  #hexa
+    case type
+      when "cabe"
+        img.hexa-img.hexa-img-logo(scr="logo")
+        .cabe
+          | Cabe
+          span.music
+            | music
+      default
+        .hexagon(data-hexagon)
+          img.hexa-img(src="http://i.imgur.com/IEiqEV0.jpg")
+          .face1
+          .face2
+        .hexa-user
+          | John Lennon
+        .hexa-notif
+          | 3
+    

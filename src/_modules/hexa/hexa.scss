@@ -1,1 +1,72 @@
 // hexa styles
+#hexa {
+  min-height: 15em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  .cabe {
+    font-size: 2.5em;
+    text-align: center;
+  }
+}
+.hexa-img {
+  width: 15em;
+  height: 15em;
+}
+.hexa-img-logo {
+  width: 10em;
+  height: 10em;
+}
+.hexa-user {
+  margin-top: 1.5em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.hexa-notif {
+  margin: 1.5em auto;
+  padding-top: 0.75em;
+  font-weight: 700;
+  background: $azul;
+  width: 3em;
+  height: 3em;
+  border-radius: 1.5em;
+}
+// According to http://codepen.io/darsain/pen/Cxawq
+.hexagon {
+  position: relative;
+  margin: 5em auto;
+  width: 190px;
+  height: 110px;
+  background-position: center center;
+}
+.hexagon .face1,
+.hexagon .face2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: inherit;
+}
+.hexagon .face1:before,
+.hexagon .face2:before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: inherit;
+}
+
+.hexagon .face1 { transform: rotate(60deg); }
+.hexagon .face1:before {
+  left: 0;
+  transform-origin: left top;
+  transform: rotate(-60deg) translate(-110px, 0);
+}
+
+.hexagon .face2 { transform: rotate(-60deg); }
+.hexagon .face2:before {
+  right: 0;
+  transform-origin: right top;
+  transform: rotate(60deg) translate(110px, 0);
+}

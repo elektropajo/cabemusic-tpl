@@ -4,6 +4,7 @@ include ../_modules/nav/nav
 include ../_modules/footer/footer
 include ../_modules/toggle/toggle
 include ../_modules/brand/brand
+include ../_modules/hexa/hexa
 
 doctype html
 head
@@ -30,7 +31,9 @@ body
     // Navs
     #l-page-nav-left
       // Close nav button
-      +toggle({'icon': 'close', 'target': 'l-page-nav-left', 'title':'Cerrar menú', 'classes': 'nav-close-left'})
+      +toggle({'icon': 'close', 'target': 'l-page-nav-left', 'title':'Cerrar menú', 'classes': 'nav-close-left'})    
+      +hexa({'type': ''})
+      //+hexa({'type': 'cabe'})
       form.form
         label(for="search", class="accesible-hide")
           | Buscar

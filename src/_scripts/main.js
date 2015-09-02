@@ -11,6 +11,7 @@ import Toggle from '../_modules/toggle/toggle';
 import Nav from '../_modules/nav/nav';
 import Front from '../_modules/front/front';
 import Footer from '../_modules/footer/footer';
+import Hexa from '../_modules/hexa/hexa';
 
 $(() => {
   new Link();
@@ -18,7 +19,7 @@ $(() => {
   let toggle = new Toggle();
   new Nav();
   new Footer();
-
+  new Hexa();
   toggle.listen();
 
 });
