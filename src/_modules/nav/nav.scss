@@ -47,6 +47,11 @@
     margin-right: 1.5em;
   }
 }
+.one-page .nav-user-menu-link {
+  @media (min-width: 62em) {
+    margin-top: 0;
+  }
+}
 // Idioma
 .one-page .nav-language {
   @media (min-width: 62em) {
@@ -56,13 +61,18 @@
     margin-right: 1em;
   }
 }
+.one-page .nav-language-menu-link {
+  @media (min-width: 62em) {
+    margin-top: 0.5em;
+  }
+}
 .nav-language-menu-item {
   float: left;
   width: 50%;
   text-align: center;
 }
 .nav-language-menu-link {
-  padding: 0.3em auto;
+  padding: 0.5em auto;
 }
 // Filtro {
 .nav-filter-menu-link {

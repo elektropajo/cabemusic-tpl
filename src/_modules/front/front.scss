@@ -1,16 +1,41 @@
 // front styles
 .page-screen {
+  height: 100vh;
+  text-align: center;
   .container {
     margin: 0 auto;
     max-width: 66em;
     padding: 1em;
   }
 }
+.page-screen-header-description {
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 20vh;
+}
+.page-screen-header-menu {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+.page-screen-header-item {
+  display: inline-block;
+  width: 8em;
+}
+.page-screen-header-link {
+  font-weight: 700;
+  font-size: 1.5em;
+  width: 8em;
+}
 .page-screen-title {
-
+  font-size: 2em;
+  font-weight: 300;
 }
 .page-screen-text {
-
+  @media (min-width: 62em) {
+    text-align: left;
+  }
 }
 .page-screen-link {
 

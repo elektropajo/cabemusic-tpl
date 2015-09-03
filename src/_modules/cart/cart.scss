@@ -1,0 +1,89 @@
+// cart styles
+#cart-toggle {
+  position: fixed;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  border:none;
+  background: $azul;
+  top: 1.5em;
+  right: 1.5em;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.cart-container {
+  position: fixed;
+  top: 5.5em;
+  right: 1.5em;
+  overflow: hidden;
+  background: $blan;
+  border-radius: 0.3em;
+  transition: all .2s ease-in;
+  width: 0;
+  height: 0;
+}
+.cart-inner {
+  opacity: 0;
+  transition: all .2s ease-in .2s;
+}
+.cart-item {
+  float: left;
+  width: 100%;
+  color: $gris;
+}
+.cart-img {
+  width: 4em;
+  height: 4em;
+  float: left;
+  margin: 0.5em;
+}
+.cart-title {
+  float: left;
+  margin: 1.5em 0.5em;
+  width: 5em;
+}
+.cart-price {
+  float: left;
+  margin: 1.5em 0.5em;
+  width: 2.5em;
+  color: $azul;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.cart-delete {
+  float: right;
+  margin: 1.5em 0.5em;
+  width: 1.5em;
+}
+.cart-total {
+  width: 100%;
+  text-align: right;
+  float:left;
+  color: $gris;
+  font-weight: 700;
+  font-size: 1.5em;
+  .cart-price {
+    float: none;
+    font-size: 1.5em;
+  }
+}
+.cart-purchase {
+  width: 100%;
+  text-align: center;
+  background: $azul;
+  margin-top: 1.5em;
+  border: none;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+// States
+.is-cart-container-open {
+  width: 20em;
+  height: auto;
+  padding: 0.1em;
+  .cart-inner {
+    opacity: 1;
+  }
+}

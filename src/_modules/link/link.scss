@@ -1,5 +1,8 @@
 // link styles
-
+a {
+  text-decoration: none;
+  transition: color .2s ease-in;
+}
 // unvisited link
 a:link {
     color: $blan;

@@ -1,0 +1,20 @@
+mixin cart()
+  aside#cart(data-cart)
+    header 
+      h2.accesible-hide Carrito de la compra
+      button#cart-toggle(data-cart-toggle) O
+    .cart-container
+      .cart-inner
+        article.cart-item
+          img.cart-img
+          h3.cart-title Título
+          p.cart-price 1,00€
+          button.cart-delete X
+        article.cart-item
+          img.cart-img
+          h3.cart-title Título
+          p.cart-price 1,00€
+          button.cart-delete X
+        .cart-total Total
+          span.cart-price 3,00€
+        button.cart-purchase COMPRAR
