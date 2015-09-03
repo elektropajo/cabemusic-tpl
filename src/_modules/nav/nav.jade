@@ -12,12 +12,12 @@ mixin nav(nav)
               href=link.url)= link.text
           else
             a(
-              class='nav-menu-link nav-'+ nav.menuName +'-menu-link '+link.type,
+              class='nav-menu-link nav-'+ nav.menuName +'-menu-link ',
               href='#',
               data-toggleLevel='1')= link.text
             // - Level 1
             .submenu(data-level="1")
-              a.submenu-title(data-toggleLevel="1")= link.text
+              a.submenu-title(data-togglelevel="1")= link.text
               ul.submenu-menu
                 each link1 in link.menuLinks
                   li.submenu-item
@@ -27,7 +27,7 @@ mixin nav(nav)
                     // - Level 2
                     if link1.menuLinks
                       .submenu(data-level="2")
-                        a.submenu-title(data-toggleLevel="2")= link1.text
+                        a.submenu-title(data-togglelevel="2")= link1.text
                         ul.submenu-menu
                           each link2 in link1.menuLinks
                             li.submenu-item
@@ -37,7 +37,7 @@ mixin nav(nav)
                               // - Level 3
                               if link2.menuLinks
                                 .submenu(data-level="3")
-                                  a.submenu-title(data-toggleLevel="3")= link2.text
+                                  a.submenu-title(data-togglelevel="3")= link2.text
                                   ul.submenu-menu
                                     each link3 in link2.menuLinks
                                       li.submenu-item

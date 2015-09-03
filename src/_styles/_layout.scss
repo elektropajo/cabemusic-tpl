@@ -56,16 +56,6 @@ body {
   position: static;
 }
 
-// Small devices (landscape phones, 34em and up)
-@media (min-width: 34em) {
-
-}
-
-// Medium devices (tablets, 48em and up)
-@media (min-width: 48em) {
-
-}
-
 // Large devices (desktops, 62em and up)
 @media (min-width: 62em) {
   #l-page-top-header {
@@ -84,6 +74,7 @@ body {
     position: fixed;
     right: 0;
     background: transparent;
+    overflow: hidden;
   }
   #l-page-top {
     width: 70%;

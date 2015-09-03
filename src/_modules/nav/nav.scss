@@ -64,7 +64,15 @@
 .nav-language-menu-link {
   padding: 0.3em auto;
 }
-
+// Filtro {
+.nav-filter-menu-link {
+  @media (min-width: 62em) {
+    width: 10em;
+    float: left;
+    margin: auto 1em;
+    text-align: center;
+  }
+}
 // Submenús
 .submenu {
   position: absolute;
@@ -74,7 +82,17 @@
   padding: 0 1em;
   height: 100vh;
   background: $gris;
-  transition: left .2s ease-in;
+  transition: all .2s ease-in;
+  @media (min-width: 62em) {
+    position: fixed;
+    top: 6.5em;
+    left: auto;
+    right: 30em;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border-radius: 0.3em;
+  }
 }
 .submenu-title {
   color: $azul;
@@ -101,4 +119,10 @@
 // States
 .is-submenu-open {
   left: 0;
+  transition: all .2s ease-in;
+  @media (min-width: 62em) {
+    width: 20em;
+    height: 30em;
+    left: auto;
+  }
 }
