@@ -1,12 +1,19 @@
 // front styles
 .page-screen {
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 20vh;
   text-align: center;
+  overflow: hidden;
   .container {
     margin: 0 auto;
     max-width: 66em;
     padding: 1em;
   }
+}
+.page-screen-header {
+  background-image: url('../images/guitar.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 .page-screen-header-description {
   font-size: 3em;
@@ -28,18 +35,131 @@
   font-size: 1.5em;
   width: 8em;
 }
+.page-screen-next {
+  margin-top: 30vh;
+  display: block;
+}
+
 .page-screen-title {
   font-size: 2em;
   font-weight: 300;
+  @media (min-width: 62em) {
+    text-align: left;
+    width: 50%;
+    float: left;
+    clear: left;
+  }
 }
 .page-screen-text {
   @media (min-width: 62em) {
     text-align: left;
+    width: 50%;
+    float: left;
+    clear: left;
   }
 }
 .page-screen-link {
-
+  transition: all .2s ease-in;
+  &:link {
+    color: $azul;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: solid 0.2em $azul;
+    padding: 0.3em 1.5em;
+    display: inline-block;
+    margin: 1.5em auto;
+  }
+  &:hover {
+    color: $blan;
+    background: $azul;
+  }
+  @media (min-width: 62em) {
+    float: left;
+    clear: left;
+  }
 }
 .page-screen-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 5em;
+  max-width: 15em;
+  @media (min-width: 62em) {
+    display: inline;
+    margin: 6em 0 0 15%;
+    width: 30%;
+  }
+}
+.page-screen-left {
+  background: $blan;
+  color: $gris;
+}
+.page-screen-right {
+  background-image: url('../images/mixer.jpg');
+  background-size: cover;
+  background-position: center center;
+  .page-screen-title {
+    @media (min-width: 62em) {
+      text-align: right;
+      width: 50%;
+      float: right;
+      clear: right;
+    }
+  }
+  .page-screen-text {
+    @media (min-width: 62em) {
+      text-align: right;
+      width: 50%;
+      float: right;
+      clear: right;
+    }
+  }
+  .page-screen-link {
+    &:link {
+      color: $blan;
+      border-color: $blan;
+    }
+    &:hover {
+      color: $azul;
+      background: $blan;
+    }
+    @media (min-width: 62em) {
+      float: right;
+      clear: right;
+    }
+  }
+  .page-screen-img {
+    @media (min-width: 62em) {
+      margin: 6em 15% 0 0;
+      width: 30%;
+    }
+  }
+}
 
+.page-screen-list {
+  background-color: $gris;
+  .page-screen-text {
+    margin-bottom: 3em;
+    @media (min-width: 62em) {
+      width: 100%;
+      padding-right: 30%;
+    }
+  }
+}
+.page-screen-list-item {
+  width: 100%;
+  float: left;
+  padding: 1em;
+  @media (min-width: 34em) {
+    width: 50%;
+  }
+  @media (min-width: 48em) {
+    width: 33%;
+  }
+  @media (min-width: 62em) {
+    width: 25%;
+  }
+}
+.page-screen-list-img {
+  width: 100%;
 }

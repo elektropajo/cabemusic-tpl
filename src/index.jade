@@ -12,6 +12,6 @@ block content
         each link in site.data.index.header.links
           li.page-screen-header-item
             a.page-screen-header-link(href=link.url) #{link.text}
-      +link({"href": "#next", "text": "Down"})
+      +link({"href": "#next", "text": "Down", "classes":"page-screen-next"})
     #next
     +front(site.data.index.pages)
