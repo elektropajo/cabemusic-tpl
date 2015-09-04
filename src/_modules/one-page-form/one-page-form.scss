@@ -1,0 +1,14 @@
+// one-page-form styles
+.one-page-form {
+  min-height: 100vh;
+  padding-top: 20vh;
+  overflow: hidden;
+  background-image: url('../images/guitar.jpg');
+  background-size: cover;
+  background-position: center center;
+  .form-container {
+    margin: 0 auto;
+    max-width: 24em;
+    padding: 1em;
+  }
+}

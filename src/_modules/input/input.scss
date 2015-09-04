@@ -1,47 +1,56 @@
 // input styles
-.form {
-  float: left;
+.form-wrapper {
+  margin: 1.5em 0;
+}
+label, .form-label {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  display: block;
+}
+input, .form-input {
   width: 100%;
-  @media (min-width: 62em) {
-    width: 15em;
-  }
-}
-.form-input {
-  margin-top: 1.5em;
-}
-.form-input-label {
-  display: none;
-}
-.form-input-label-radio, .form-input-label-checkbox {
-  display: inline-block;
-}
-
-.form-input:required,
-.form-input:invalid {
-  border-color: red;
-}
-
-.form-input:disabled {
-  border-color: grey;
-}
-
-.form-input:valid {
-  border-color: green;
-}
-
-input {
-  color: $gris;
+  border: 0.1em solid $blan;
   border-radius: 0.3em;
-  padding: 0.3em 1em;
-  outline: none;
+  padding: 0.3em;
+  background: transparent;
+  &:invalid {
+  }
+  &:disabled {
+    border-color: $gris;
+  }
+  &:valid {
+    border-color: $azul;
+  }
 }
 input[type="search"] {
   box-sizing: border-box;
   border-radius: 50vh;
-  border-style: none;
   float: left;
   width: 100%;
+  padding: 0.3em 1.5em;
 }
+input[type="password"] {
+  font-weight: 800;
+  letter-spacing: .5em;
+}
+input[type="submit"], .form-submit {
+  background: $azul;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.form-link {
+  width: 100%;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  margin-top: 1.5em;
+  overflow: hidden;
+  float: left;
+}
+
 .button {
   color: $blan;
   padding: 0.3em 1.5em;

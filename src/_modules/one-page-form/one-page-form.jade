@@ -1,0 +1,14 @@
+mixin one-page-form()
+  form.one-page-form
+    .form-container
+      h2.one-page-form-title Regístrate
+      p.form-description Párrafo
+      .form-wrapper
+        label.form-label(for="email") Email
+        input.form-input(type="email", id="email", required)
+      .form-wrapper
+        label.form-label(for="password") Contraseña
+        input.form-input(type="password", id="password", required)
+      .form-wrapper
+        input.form-submit(type="submit", value="Crear cuenta")
+      a.form-link(href="#") ¿Olvidaste tu contraseña?
