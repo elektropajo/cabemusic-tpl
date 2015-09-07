@@ -1,0 +1,82 @@
+// albums styles
+.musiclist {
+  padding-top: 8em;
+}
+.album {
+  width: 100%;
+  float: left;
+  padding: 2em;
+  @media (min-width: 34em) {
+    width: 50%;
+    padding: 3em;
+  }
+  @media (min-width: 48em) {
+    width: 33%;
+  }
+  @media (min-width: 62em) {
+    width: 25%;
+  }
+}
+.album-face, .album-info {
+  position: relative;
+  width: 12em;
+  height: 12em;
+  margin: 0 auto;
+}
+.album-img {
+  width: 12em;
+  height: 12em;
+}
+.album-discount {
+  position: absolute;
+  top: -2em;
+  left: -3em;
+}
+.album-new {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12em;
+  background: $azul;
+  color: $blan;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.album-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12em;
+  height: 12em;
+  border-radius: 0.3em;
+  border: solid 0.2em $blan;
+  &:hover {
+    border-color: $azul;
+  }
+}
+.album-title {
+  width: 100%;
+  float: left;
+  margin: 1em 0 .2em;
+}
+.album-author,
+.album-genre {
+  margin-bottom: 0.2em;
+  width: 100%;
+  float: left;
+}
+
+.album-price {
+  float: left;
+  width: 50%;
+  line-height: 3.2em;
+}
+.album-rate {
+  float: left;
+  width: 50%;
+  text-align: right;
+  color: $amar;
+  font-size: 2em;
+  font-weight: 700;
+}

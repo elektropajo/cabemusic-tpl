@@ -17,6 +17,7 @@ body {
   background: transparent;
   position: fixed;
   height: $page-top-height;
+  z-index: 1;
 }
 #l-page-top-header {
   @extend %layout-box;
@@ -29,6 +30,7 @@ body {
   position: fixed;
   left:-$nav-width;
   padding: 1em;
+  z-index: 2;
   .form {
     margin-bottom: 1.5em;
   }
@@ -42,12 +44,14 @@ body {
   top: 0;
   right:-$nav-width;
   padding: 1em;
+  z-index: 3;
 }
 #l-page-main {
   @extend %layout-box;
   position: static;
   background: #555;
   overflow-x: hidden;
+  z-index: 0;
 }
 #l-page-footer {
   @extend %layout-box;

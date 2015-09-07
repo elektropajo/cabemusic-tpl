@@ -1,18 +1,17 @@
+include ../_modules/albums/albums
+
 extends ../_layouts/base
 
 block content
-  section#content.content-music-list
-    header#content-header.content-music-list-header
-      h2#content-header-title.content-music-list-header-title= site.data.musica.pagename
-    nav#content-nav.content-music-list-nav
+  section.musiclist
+    header.musiclist-header
+      h2.accesible-hide= site.data.musica.pagename
+    nav.musiclist-nav
       #l-page-nav-right
         // Close nav button
         +toggle({'icon': 'close', 'target': 'l-page-nav-right', 'title':'Cerrar filtros', 'classes': 'toggle-nav-close-right'})
         // Nav: Filter
         +nav(site.data.navs.filter)
     +cart
-    each album in site.data.musica.albums
-      article#content.content-music-list-album
-        img.content-music-list-album-caratula(src=album.caratula, width="200px")
-        h3.content-music-list-album-title album.titulo
-        p.content-music-list-album-autor album.autor
+    // Albums
+    +albums(site.data.musica.albums)

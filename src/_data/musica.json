@@ -3,24 +3,24 @@
   "albums": [
     {
       "caratula": "images/caratula.png",
-      "titulo": "Título",
+      "title": "Título",
       "genero": "Género",
       "autor": "Autor",
       "link": "album",
-      "precio": "1€",
+      "precio": "1",
       "new": "false",
       "oferta": "true",
-      "valoracion": "4"
+      "rate": "4"
     },{
       "caratula": "images/caratula.png",
-      "titulo": "Título",
+      "title": "Título",
       "genero": "Género",
       "autor": "Autor",
       "link": "album",
-      "precio": "1€",
+      "precio": "1",
       "new": "false",
       "oferta": "true",
-      "valoracion": "3"
+      "rate": "3"
     }
   ]
 }

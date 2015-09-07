@@ -1,0 +1,14 @@
+mixin albums(data)
+  each album in data
+    article.album
+      .album-face
+        img.album-img(src=album.caratula, width="200px")
+        .album-discount En descuento
+        .album-new Nuevo
+        a.album-link(href=album.link) Escuchar
+      .album-info
+        h3.album-title: a #{album.title}
+        a.album-author(href='artist') #{album.autor}
+        a.album-genre(href='musica') #{album.genero}
+        a.album-price(data-add-to-chart) #{album.precio}€
+        span.album-rate #{album.rate}/5
